@@ -1,0 +1,164 @@
+:root{
+    font-size: 15px;
+    
+    /* (https://fonts.google.com/specimen/Overpass) */
+    font-family: 'Overpass';
+    
+    --font-weight-400: 400;
+    --font-weight-700: 700;
+
+    --h1-cl: hsl(0, 0%, 100%);
+    --p-graph-cl: hsl(217, 12%, 63%);
+    --rating-bt:hsl(216, 12%, 54%);
+    --card-bg-cl: hsl(213, 19%, 18%);
+    --body-bg-cl: hsl(216, 12%, 8%);
+    --new-bg-cl: hsl(218, 13%, 24%);
+    --submit-bt-cl:hsl(25, 97%, 53%);
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--h1-cl);
+    background-color: var(--body-bg-cl);
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    margin: 100px auto;
+    background-color: var(--card-bg-cl);
+    width: 300px;
+    border-radius: 20px;
+}
+.logo{
+    margin: 30px;
+}
+.img{
+    background-color: var(--new-bg-cl);
+    padding: 15px;
+    border-radius: 30px;
+}
+.thankyou-img{
+    width: 150px;
+    margin-left: 40px;
+}
+.head{
+    margin: -50px 20px 0 20px;
+}
+.thankyou-head{
+    margin-top: -50px;
+    text-align: center;
+    padding: 20px;
+}
+#rating{
+    width: 200px;
+    margin-left: 25px;
+    padding: 7px;
+    border-radius: 10px;
+    color: var(--submit-bt-cl);
+    background-color: var(--new-bg-cl);
+}
+h1{
+    font-size: 1.5rem;
+}
+#appreciate{
+    color: var(--p-graph-cl);
+    line-height: 1.5;
+}
+#h1{
+    padding: 10px;
+    margin-bottom: -10px;
+}
+#p1{
+    font-size: 1.1rem;
+    padding: 10px;
+    color: var(--p-graph-cl);
+}
+.rating-values{
+    display: flex;
+    justify-content:center;
+    gap: 15px;
+}
+.rating-values .bt-rating{
+    color: var(--p-graph-cl);
+    background-color: var(--new-bg-cl);
+    width: 40px;
+    height: 40px;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    font-weight: var(--font-weight-700);
+}
+.rating-values .bt-rating:hover{
+    background-color: var(--submit-bt-cl);
+    color: var(--h1-cl);
+}
+
+button{
+    cursor: pointer;
+}
+#submit{
+    width: 270px;
+    padding: 15px;
+    color: var(--h1-cl);
+    background-color: var(--submit-bt-cl);
+    font-weight: var(--font-weight-700);
+    margin: 20px 0 30px 18px;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+}
+#submit:hover{
+    background-color: var(--h1-cl);
+    color: var(--submit-bt-cl);
+}
+.card-two{
+    display: none;
+}
+
+@media screen and (min-width:1024px) {
+    :root{
+        font-size: 1.3rem;
+    }
+    .card{
+    width: 500px;
+    border-radius: 30px;
+ }   
+ .img{
+    padding: 20px;
+    width: 30px;
+    border-radius: 50px;
+ }
+ h1{
+    font-size: 2rem;
+ }
+ .rating-values .bt-rating{
+    width: 70px;
+    height: 70px;
+    font-size: 1rem;
+    border-radius: 50px;
+ }
+ #submit{
+    width: 450px;
+    padding: 20px;
+    margin: 40px 0 50px 25px;
+    border-radius: 40px;
+    font-size: 1rem;
+ }
+ .thankyou-img{
+    width: 210px;
+    margin-left: 100px;
+ }
+#rating{
+    width: 230px;
+    border-radius: 20px;
+    margin: 25px 0 0 100px;;
+    font-weight: var(--font-weight-700);
+}
+.rating-h1{
+    margin-bottom: -20px;
+}
+#appreciate{
+    padding: 25px;
+}
+}
